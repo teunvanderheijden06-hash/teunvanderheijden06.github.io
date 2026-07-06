@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kijkcijfers</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <div class="counter-wrap">
+      <p class="counter-label">kijkcijfers</p>
+      <div id="counter" class="counter" aria-live="polite">0</div>
+    </div>
+
+    <form id="editor" class="secret-editor" autocomplete="off">
+      <label class="sr-only" for="counterInput">Set counter value</label>
+      <input id="counterInput" type="number" min="0" step="1" />
+      <button type="submit">Save</button>
+      <button type="button" id="cancelEditor">Cancel</button>
+    </form>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
